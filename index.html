@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>interior consultant</title>
+</head>
+<body>
+  <div class="container">
+    <h4 class="logo">This interior</h4>
+    <div class="Header">
+     <nav>
+        <ul class="menuList">
+          <li class="active"><a href="home">Home</a></li>
+          <li><a href="home">Collection</a></li>
+          <li><a href="home">About</a></li>
+          <li><a href="home">Contact</a></li>
+        </ul>
+        <img class="menu-icon" src="menu.jpg" alt="" width="30">
+    
+      </nav>
+    </div>
+    <div class="aside">
+      <h1>Modern interior</h1>
+      <p>A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.</p>
+      <button>Read more<img src="arrow-right.svg"></button>
+    </div>
+    <div class="main">
+      <div class="profile">
+        <img src="photo2.png" alt="" width="60px">
+        <h4>Aliza Webber</h4>
+        <span>Interior designer</span>
+        <h3>Designed in 2021 by Aliza Webber</h3>
+      </div>
+    </div>
+    <div class="footer">
+      <h4 class="footer">created by afrofuture - devChallenges.io</h4>
+    </div>
+  </div>
+<script>
+  const menuBtn = document.querySelector('.menu-icon');
+  const navlinks = document.querySelector('.menuList');
+  const closeBtn = document.querySelector('.close-icon');
+  
+  menuBtn.addEventListener('click', ()=> {
+    navlinks.classList.toggle('mobile-menu')
+  })
+
+</script>
+  
+</body>
+</html>
